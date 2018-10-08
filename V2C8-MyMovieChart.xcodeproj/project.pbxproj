@@ -12,6 +12,12 @@
 		72427FC5215F756300EFBED5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72427FC3215F756300EFBED5 /* Main.storyboard */; };
 		72427FC7215F756300EFBED5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72427FC6215F756300EFBED5 /* Assets.xcassets */; };
 		72427FCA215F756300EFBED5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72427FC8215F756300EFBED5 /* LaunchScreen.storyboard */; };
+		72614ABA215F774100A7E15E /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72614AB9215F774100A7E15E /* ListViewController.swift */; };
+		72614ABD215F9AAF00A7E15E /* MovieVO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72614ABC215F9AAF00A7E15E /* MovieVO.swift */; };
+		72614ABF2160A5CD00A7E15E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72614ABE2160A5CD00A7E15E /* MovieCell.swift */; };
+		72614AC42160A95400A7E15E /* secret.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72614AC12160A95400A7E15E /* secret.jpg */; };
+		72614AC52160A95400A7E15E /* darknight.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72614AC22160A95400A7E15E /* darknight.jpg */; };
+		72614AC62160A95400A7E15E /* rain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 72614AC32160A95400A7E15E /* rain.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		72427FC6215F756300EFBED5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72427FC9215F756300EFBED5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72427FCB215F756300EFBED5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72614AB9215F774100A7E15E /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		72614ABC215F9AAF00A7E15E /* MovieVO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieVO.swift; sourceTree = "<group>"; };
+		72614ABE2160A5CD00A7E15E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		72614AC12160A95400A7E15E /* secret.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = secret.jpg; sourceTree = "<group>"; };
+		72614AC22160A95400A7E15E /* darknight.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darknight.jpg; sourceTree = "<group>"; };
+		72614AC32160A95400A7E15E /* rain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = rain.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +66,28 @@
 		72427FBE215F756300EFBED5 /* V2C8-MyMovieChart */ = {
 			isa = PBXGroup;
 			children = (
+				72614AC02160A8D600A7E15E /* Resources */,
+				72614AB9215F774100A7E15E /* ListViewController.swift */,
 				72427FBF215F756300EFBED5 /* AppDelegate.swift */,
 				72427FC1215F756300EFBED5 /* ViewController.swift */,
 				72427FC3215F756300EFBED5 /* Main.storyboard */,
+				72614ABE2160A5CD00A7E15E /* MovieCell.swift */,
+				72614ABC215F9AAF00A7E15E /* MovieVO.swift */,
 				72427FC6215F756300EFBED5 /* Assets.xcassets */,
 				72427FC8215F756300EFBED5 /* LaunchScreen.storyboard */,
 				72427FCB215F756300EFBED5 /* Info.plist */,
 			);
 			path = "V2C8-MyMovieChart";
+			sourceTree = "<group>";
+		};
+		72614AC02160A8D600A7E15E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				72614AC22160A95400A7E15E /* darknight.jpg */,
+				72614AC32160A95400A7E15E /* rain.jpg */,
+				72614AC12160A95400A7E15E /* secret.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,8 +149,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				72427FCA215F756300EFBED5 /* LaunchScreen.storyboard in Resources */,
+				72614AC62160A95400A7E15E /* rain.jpg in Resources */,
 				72427FC7215F756300EFBED5 /* Assets.xcassets in Resources */,
 				72427FC5215F756300EFBED5 /* Main.storyboard in Resources */,
+				72614AC42160A95400A7E15E /* secret.jpg in Resources */,
+				72614AC52160A95400A7E15E /* darknight.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +165,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				72427FC2215F756300EFBED5 /* ViewController.swift in Sources */,
+				72614ABD215F9AAF00A7E15E /* MovieVO.swift in Sources */,
 				72427FC0215F756300EFBED5 /* AppDelegate.swift in Sources */,
+				72614ABF2160A5CD00A7E15E /* MovieCell.swift in Sources */,
+				72614ABA215F774100A7E15E /* ListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
